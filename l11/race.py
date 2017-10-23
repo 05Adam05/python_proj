@@ -43,7 +43,7 @@ car1 = {
 car2 = {
 	"name": "LAMBARGINI",
 	"speed":3,
-	"fule": 35,
+	"fule": 40,
 	"spend": 3,
 	"nitro": 11,
 	"distance": 0
@@ -53,7 +53,7 @@ car2 = {
 car3 = {
 	"name": "BUGATI",
 	"speed": 6,
-	"fule": 30,
+	"fule": 35,
 	"spend": 5,
 	"nitro": 10,
 	"distance": 0
@@ -63,5 +63,22 @@ car3 = {
 track = 40
 
 while True:
-	race_step(car1)
 	race_step(car2)
+	race_step(car3)
+
+	if car2["fule"] <= 0:
+		print(car3, "ВЫЙГРАЛ")
+		break
+
+	if car3["fule"] <= 0:
+		print(car2, "ВЫЙГРАЛ")
+		break
+
+	if car2["distance"] >= 40:
+		print(car3, "ВЫЙГРАЛ")
+		break
+
+	if car3["distance"] >= 40:
+		print(car2, "ВЫЙГРАЛ")
+		break
+
