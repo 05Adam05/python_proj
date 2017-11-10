@@ -1,0 +1,9 @@
+{       
+        "login": "Adam_Harkoman",
+        "Address": "Elita st.228"
+	"Fhone number": "8-988-780-24-85",
+	"Product": "Часы"
+}
+
+
+{"login": "Adam_Harkoman", "password": "69"}{"login": "Adam_Harkoman", "password": "69"}{"login": "Adam_Harkoman", "password": "69"}
