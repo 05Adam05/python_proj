@@ -12,13 +12,9 @@ def cheker(message):
 @bot.message_handler(commands=["start"])
 def start_kb(message):
 	our_kb = telebot.types.ReplyKeyboardMarkup()
-	our_kb.row("+","-")
+	our_kb.row("Адам","-")
 	our_kb.row("Привет","Здрасте","Пока")
-
-
-@bot.message_handler(commands=["start"])
-def stsrt_kb(message):
-	bot.send_message(massage.chat.id, "Введи оператор", reply_markup=our_kb)
+	bot.send_message(message.chat.id, "Введи оператор", reply_markup=our_kb)
 
 
 if __name__=="__main__":
