@@ -1,0 +1,42 @@
+div {
+	background: wheat;
+	width: 100px;
+	height: 30px;
+	margin: 20px auto;
+	font-size: 16px;
+	text-align: center;
+}
+#mr_red {
+	background-color: #ff0000;
+}
+#mr_orange, #mr_yellow {
+	height: 60px;
+	color: aquamarine;
+}
+#mr_orange {
+	background-color: orange;
+}
+#mr_yellow {
+	background-color: yellow;
+}
+.color_block {
+	width: 150px;
+}
+.green_color {
+	background-color: #0f0
+}
+.blue_color {
+	background-color: rgb(22, 111,255)
+}
+.dark-blue_color {
+	background-color: rgba(6, 36, 84, 0.8); 
+}
+.deep-purple_color {
+	background-color: #980986 
+}
+body {
+height: 1000px;
+background: #1e5799;
+background: -moz-linear-gradient(-45deg, #1e5799 16%, #1e5799 18%, #82142c 37%, #82142c 41%, #dfe22b 77%, #374366 85%, #374366 88%, #374366 92%, #2989d8 92%, #171260 93%, #2989d8 93%, #2989d8 93%, #2989d8 94%, #2989d8 94%, #2989d8 95%, #2989d8 95%, #2989d8 96%, #374366 98%, #374366 98%, #2989d8 100%, #2989d8 100%, #2989d8 100%, #2989d8 100%, #7db9e8 100%, #171260 100%, #171260 100%);
+background: -webkit-linear-gradient(-45deg, #1e5799 16%,#1e5799 18%,#82142c 37%,#82142c 41%,#dfe22b 77%,#374366 85%,#374366 88%,#374366 92%,#2989d8 92%,#171260 93%,#2989d8 93%,#2989d8 93%,#2989d8 94%,#2989d8 94%,#2989d8 95%,#2989d8 95%,#2989d8 96%,#374366 98%,#374366 98%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#7db9e8 100%,#171260 100%,#171260 100%);
+background: linear-gradient(135deg, #1e5799 16%,#1e5799 18%,#82142c 37%,#82142c 41%,#dfe22b 77%,#374366 85%,#374366 88%,#374366 92%,#2989d8 92%,#171260 93%,#2989d8 93%,#2989d8 93%,#2989d8 94%,#2989d8 94%,#2989d8 95%,#2989d8 95%,#2989d8 96%,#374366 98%,#374366 98%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#7db9e8 100%,#171260 100%,#171260 100%);}
