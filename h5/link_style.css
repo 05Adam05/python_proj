@@ -1,0 +1,63 @@
+a.link1:link {
+	text-decoration: none;
+	color: black;
+
+}
+a.link1:visted {
+	text-decoration: none;
+	color: black;
+
+}
+a.link1:hover {
+	font-size: 50px;
+	text-decoration: underline;
+	color: black;
+	color: red;
+
+}
+a.link1:active{
+	text-decoration: underline;
+
+}
+a.link2:link {
+	text-decoration: none;
+	color: black;
+
+}
+a.link2:visted {
+	text-decoration: none;
+	color: black;
+
+}
+a.link2:hover {
+	font-size: 50px;
+	text-decoration: underline;
+	color: black;
+	color: red;
+
+}
+a.link2:active{
+	text-decoration: underline;
+
+}
+a:link {
+	text-decoration: none;
+	color: black;
+
+}
+a:visted {
+	text-decoration: none;
+	color: black;
+
+}
+a:hover {
+	font-size: 50px;
+	text-decoration: underline;
+	color: black;
+	color: red;
+
+}
+a:active{
+	text-decoration: underline;
+
+}

@@ -1,0 +1,14 @@
+.img2 {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left: 150px;
+	transform: rotate(180deg);
+
+}
+.img1 {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	left: 150px;
+}

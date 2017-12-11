@@ -1,0 +1,19 @@
+div.text1 {
+	font-family: "Monotype Corsiiva", cursive;
+	font-size: 20px;
+	font-weight: lighter;
+
+}
+
+div.text2{
+	font-family:"Mistral",cursive;
+	font-size: 15px;
+	font-weight: bolder;
+
+}
+div.text3{
+	font-family: "Comic Sans MS", cursive;
+	font-variant: small-caps;
+	text-align: right;
+}
+

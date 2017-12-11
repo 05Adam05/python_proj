@@ -1,0 +1,25 @@
+body{
+	background-image:url(panda.jpg.jpg);
+	background-size: cover;
+}
+div {
+	color: green;
+	margin:auto;
+	height: 40px;
+	background: #FFDE40;
+	border: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.a{
+	color:green;
+}
+.b{
+	color: #33CCCC;
+	background: red;
+}
+.c{
+	color: #A60000;
+	background: green;
+}
