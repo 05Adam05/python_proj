@@ -1,0 +1,56 @@
+div
+.img1 {
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	left: 200px;
+	bottom: 350px;
+	/*transform: rotate(180deg);
+	transform: translateX(100px);
+	transform: translateY(100px);*/
+	/*top: 250px;*/
+}
+
+a.link1{
+	display: block;
+	background-image: url(download.png);
+	background-size: cover;
+	height: 60px;
+	width: 200px;
+	position: absolute;
+	top: 400px;
+	left: 250px;
+}
+
+a.link1:link {
+	text-decoration: none;
+	color: red;
+}
+
+a.link1:visited {
+	text-decoration: none;
+	color: red;
+}
+
+a.link1:hover {
+	font-size: 50px;
+	text-decoration: underline;
+	color: red;
+	cursor: text;;
+}
+
+a.link1:active {
+	text-decoration: overline;
+}
+p {
+	position: absolute;
+	bottom: 10px;
+
+
+}
+
+div {
+	background: gray;
+	position: absolute;
+	bottom: 10px;
+}
