@@ -7,6 +7,17 @@ TOKEN = "455886429:AAEZs-Yt1PCPx1tlYAc2WWpi_JxhacJ5dnM"
 bot = telebot.TeleBot(TOKEN)
 
 
+
+
+@bot.message_handler(commands=["start"])
+def start_kb(message):
+	b_kb = telebot.types.ReplyKeyboardMarkup()
+	b_kb.row("/start")
+	b_kb.row("Событие")
+	b_kb.row("Новости")
+	b_kb.row("Погода")
+	bot.send_message(message.chat.id, "Введи оператор", reply_markup=b_kb)
+
 @bot.message_handler(regexp="Новости")
 def answer(message):
 	bot.send_message(message.chat.id, "Все новсти в Махачкале вы можете узнать сдесь https://news.yandex.ru/Makhachkala")
@@ -42,27 +53,50 @@ def answer(message):
 			 Развернувшись на фронте около 1400 км, операция явилась одной из крупнейших в ходе всей войны. \n\
 			 Подробнее можете узнать сдесь http://www.calend.ru/event/7386/")
 	elif str(data):
-		bot.send_message(message.chat.id, "Пока событий нет")
-
+		bot.send_message(message.chat.id, "Пока данных о событиях нет")
 
 
 @bot.message_handler(regexp="Погода")
 def answer(message):
 	data = datetime.date.today()
 	bot.send_message(message.chat.id, data)
-	if str(data) == "2017-12-20":
-		bot.send_message(message.chat.id, "Днем +9°с \n\
-										Ночью +6°\n\
-										Пасмурно")
+	if str(data) == '2017-12-22':
+		bot.send_message(message.chat.id, "Днем +6°\n\
+Ночью 0°с\n\
+Пасмурно")
+	elif str(data) == "2017-12-23":
+		bot.send_message(message.chat.id, "Днем +4°\n\
+Ночью +2°с\n\
+Небльшой дождь")
+	elif str(data) == "2017-12-24":
+		bot.send_message(message.chat.id, "Днем +3°\n\
+Ночью 1\n\
+Снеш")
+	elif str(data) == "2017-12-25":
+		bot.send_message(message.chat.id, "Днем +9°\n\
+Ночью +5°\n\
+Пасмурно")
+	elif str(data):
+		bot.send_message(message.chat.id, "Данных о погоде нет ")
 
-@bot.message_handler(commands=["start"])
-def start_kb(message):
-	b_kb = telebot.types.ReplyKeyboardMarkup()
-	b_kb.row("/start")
-	b_kb.row("Событие")
-	b_kb.row("Новости")
-	b_kb.row("Погода")
-	bot.send_message(message.chat.id, "Введи оператор", reply_markup=b_kb)
+@bot.message_handler(regexp="На завтра")
+def answer(message):
+	data = datetime.date.today()
+	bot.send_message(message.chat.id, data)
+	if str(data) == '2017-12-22':
+		bot.send_message(message.chat.id, "Днем +4°\n\
+Ночью +2°с\n\
+Небльшой дождь")
+	elif str(data) == "2017-12-23":
+		bot.send_message(message.chat.id, "Днем +3°\n\
+Ночью +1°\n\
+Снег")
+	elif str(data) == "2017-12-24":
+		bot.send_message(message.chat.id, "Днем +9°\n\
+Ночью +5°с\n\
+Пасмурно")
+	elif str(data):
+		bot.send_message(message.chat.id, "Данных о погоде нет ")
 
 @bot.message_handler(regexp="Адам")
 def cheker(message):
@@ -84,6 +118,10 @@ def answer(message):
 def answer(message):
 	bot.send_message(message.chat.id, "Салам Алейкум")
 
+@bot.message_handler(regexp="Салам")
+def answer(message):
+	bot.send_message(message.chat.id, "Ва Алейкум Ассалам варахматуллахи")
+
 @bot.message_handler(regexp="Салют")
 def answer(message):
 	bot.send_message(message.chat.id, "Салам Алейкум")
@@ -98,7 +136,7 @@ def answer(message):
 
 @bot.message_handler(regexp="Как дела")
 def answer(message):
-	bot.send_message(message.chat.id, "Отлично, а утебя")
+	bot.send_message(message.chat.id, "Отлично, а у тебя")
 
 @bot.message_handler(regexp="Отлично")
 def answer(message):
